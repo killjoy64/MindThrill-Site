@@ -1,0 +1,92 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="fa fa-2x fa-bars"></span>
+    </button>
+    <a class="navbar-brand">Menu</a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="top-navbar">
+    <ul class="nav navbar-nav">
+      <li id="home-btn" class="toggleable"><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li id="about-btn" class="toggleable"><a>About</a></li>
+      <!--<li><a>Gallery</a></li>-->
+      <li class="navbar-logo"><a><img src="../assets/images/logo-full.png" class="img-fit-w"/></a></li>
+      <!--<li><a>Blog</a></li>-->
+      <li id="rooms-btn" class="toggleable"><a>Rooms</a></li>
+      <li id="contact-btn" class="toggleable"><a>Contact</a></li>
+    </ul>
+  </div>
+
+</nav>
+
+<router-outlet></router-outlet>
+
+<footer>
+  <div class="row">
+    <div class="col-xs-12 col-md-4 col-md-offset-2">
+      <div class="row">
+        <!--<div class="col-xs-12">-->
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d695.6358905567727!2d-84.72661222246134!3d45.78033695722218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d35f4cd45ac40d7%3A0xaa766468e1dfb792!2sMackinaw+Crossings!5e0!3m2!1sen!2sus!4v1497471550126" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+        <!--</div>-->
+        <div class="col-xs-10 col-md-12 col-xs-offset-1">
+          <div class="row">
+            <div class="col-xs-12">
+              <h4><b>Contact Us</b></h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-2 col-sm-1">
+              <span class="fa fa-phone"></span>
+            </div>
+            <div class="col-xs-10 col-sm-10">
+              <span>1 (231) 436 6150</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-2 col-sm-1">
+              <span class="fa fa-envelope"></span>
+            </div>
+            <div class="col-xs-10 col-sm-10">
+              <span>info@escapemackinaw.com</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-2 col-sm-1">
+              <span class="fa fa-location-arrow"></span>
+            </div>
+            <div class="col-xs-10 col-sm-10">
+              <span>136 S Huron St., Mackinaw City</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="col-xs-12 col-md-4">-->
+    <!--<div class="row">-->
+    <!--<div class="col-xs-10 col-md-12 col-xs-offset-1">-->
+    <!--<h4><b>About</b></h4>-->
+    <!--</div>-->
+    <!--<div class="col-xs-10 col-md-12 col-xs-offset-1">-->
+    <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div class="col-xs-12 col-md-4">
+      <img src="../assets/images/logo-full.png" class="img-fit-w footer-img"/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2">
+      <hr/>
+    </div>
+    <div class="col-xs-12 text-center">
+      <h5>Developed by <a href="https://www.linkedin.com/in/kyle-flynn-a48719136/">Kyle Flynn</a> &copy; 2017 Mind Thrill Escape Rooms</h5>
+    </div>
+  </div>
+</footer>

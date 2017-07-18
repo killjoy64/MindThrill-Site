@@ -1,0 +1,154 @@
+<main id="about" class="container full-page about-page pad-top-50 pad-bot-50">
+  <div [@flyInFromTop]="animations[0]" (@flyInFromTop.done)="continueAnimation($event)" class="row">
+    <div class="col-xs-12 text-center">
+      <h1 class="header">What is it?</h1>
+    </div>
+    <div class="col-xs-10 col-md-6 col-xs-offset-1 col-md-offset-3">
+      <hr>
+    </div>
+  </div>
+
+  <div *ngIf="option_one">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
+        <p class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <img src="../../../assets/images/mackinaw-bridge.jpg" class="box-shadow img-fit-w" />
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="option_two">
+    <div class="row">
+      <div [@growThenBounce]="animations[1]" (@growThenBounce.done)="continueAnimation($event)" class="col-xs-12 col-sm-6 col-md-3">
+        <div class="row">
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-top-10">
+            <span class="fa fa-5x fa-lock"></span>
+          </div>
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-10">
+            <p>You walk into a normal room themed to the game. At that moment, you are locked inside and must escape!</p>
+          </div>
+        </div>
+      </div>
+      <div [@growThenBounce]="animations[2]" (@growThenBounce.done)="continueAnimation($event)" class="col-xs-12 col-sm-6 col-md-3">
+        <div class="row">
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-top-10">
+            <span class="fa fa-5x fa-clock-o"></span>
+          </div>
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-10">
+            <p>You have 60 minutes (1 hour) to escape the room. Three free hints are available to you, but any hints beyond that will be costly to your adventure.</p>
+          </div>
+        </div>
+      </div>
+      <div [@growThenBounce]="animations[3]" (@growThenBounce.done)="continueAnimation($event)" class="col-xs-12 col-sm-6 col-md-3">
+        <div class="row">
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-top-10">
+            <span class="fa fa-5x fa-puzzle-piece"></span>
+          </div>
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-10">
+            <p>Each room is unique with puzzles fitting to it's theme. Work together to uncover clues and solve complex puzzles pertinent to your escape.</p>
+          </div>
+        </div>
+      </div>
+      <div [@growThenBounce]="animations[4]" (@growThenBounce.done)="continueAnimation($event)" class="col-xs-12 col-sm-6 col-md-3">
+        <div class="row">
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-top-10">
+            <span class="fa fa-5x fa-group"></span>
+          </div>
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-10">
+            <p>You don't have to go alone! Bring friends or family to help aid you in your escape. We recommend anywhere between 4-8 players in a group.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div [@flyInFromBottom]="animations[5]" (@flyInFromBottom.done)="continueAnimation($event)" class="row">
+      <div class="col-xs-12 text-center">
+        <h1 class="header">Who should I bring?</h1>
+      </div>
+      <div class="col-xs-10 col-md-6 col-xs-offset-1 col-md-offset-3">
+        <hr>
+      </div>
+    </div>
+    <div [@flyInFromBottom]="animations[6]" (@flyInFromBottom.done)="continueAnimation($event)" class="row">
+      <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2 text-center">
+        <h4>
+          The Mind Thrill Escape experience is perfect for just about any group! For example you could bring...
+        </h4>
+      </div>
+    </div>
+    <div class="row mar-top-40">
+      <div [@growThenBounce]="animations[7]" (@growThenBounce.done)="continueAnimation($event)" class="col-xs-6 col-sm-4 col-md-2">
+        <div class="row">
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-top-10">
+            <img src="../../../assets/images/people_friends.png" class="img-fit-w"/>
+          </div>
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-10">
+            <p>Friends</p>
+          </div>
+        </div>
+      </div>
+      <div [@growThenBounce]="animations[8]" (@growThenBounce.done)="continueAnimation($event)" class="col-xs-6 col-sm-4 col-md-2">
+        <div class="row">
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-top-10">
+            <img src="../../../assets/images/people_family.png" class="img-fit-w"/>
+          </div>
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-10">
+            <p>Family</p>
+          </div>
+        </div>
+      </div>
+      <div [@growThenBounce]="animations[9]" (@growThenBounce.done)="continueAnimation($event)" class="col-xs-6 col-sm-4 col-md-2">
+        <div class="row">
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-top-10">
+            <img src="../../../assets/images/people_date.png" class="img-fit-w"/>
+          </div>
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-10">
+            <p>A Date</p>
+          </div>
+        </div>
+      </div>
+      <div [@growThenBounce]="animations[10]" (@growThenBounce.done)="continueAnimation($event)" class="col-xs-6 col-sm-4 col-md-2">
+        <div class="row">
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-top-10">
+            <img src="../../../assets/images/people_teams.png" class="img-fit-w"/>
+          </div>
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-10">
+            <p>Co-Workers</p>
+          </div>
+        </div>
+      </div>
+      <div [@growThenBounce]="animations[11]" (@growThenBounce.done)="continueAnimation($event)" class="col-xs-6 col-sm-4 col-md-2">
+        <div class="row">
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-top-10">
+            <img src="../../../assets/images/people_self.png" class="img-fit-w"/>
+          </div>
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-10">
+            <p>Yourself</p>
+          </div>
+        </div>
+      </div>
+      <div [@growThenBounce]="animations[12]" (@growThenBounce.done)="continueAnimation($event)" class="col-xs-6 col-sm-4 col-md-2">
+        <div class="row">
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-top-10">
+            <img src="../../../assets/images/people_corporate.png" class="img-fit-w"/>
+          </div>
+          <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2 text-center pad-10">
+            <p>Corporate Teams</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="view-bottom centered">
+    <div id="rooms-scroll" class="icon icon-down">
+      <a class="fa fa-chevron-down"></a>
+    </div>
+  </div>
+
+</main>
