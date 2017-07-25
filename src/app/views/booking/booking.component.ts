@@ -1,5 +1,6 @@
 import {Component, SecurityContext, OnInit, AfterViewInit} from '@angular/core';
 import {DomSanitizer, SafeUrl} from "@angular/platform-browser";
+import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'booking',
@@ -10,14 +11,15 @@ export class BookingComponent implements OnInit, AfterViewInit {
   safeHTML: any;
   safeURL: SafeUrl;
 
-  constructor(private sanitizer: DomSanitizer) {
-    // document.getElementById("fake-bookeo").remove();
+  constructor(private sanitizer: DomSanitizer, private meta: Meta, private title: Title) {
+    this.title.setTitle('Booking | Mind Thrill Escape Rooms');
+    this.meta.updateTag({name: 'keywords', content: 'mind thrill,mind thrill escape rooms,escape rooms,mackinaw city,mackinaw escape,fun things to do,challenging, group activity,date night,corporate team building,booking,appointments'});
+
     this.safeURL = this.sanitizer.bypassSecurityTrustResourceUrl("https://bookeo.com/widget.js?a=41562H6YTFF15C44DEC3AD");
     this.safeHTML = this.sanitizer.bypassSecurityTrustHtml('<script type="text/javascript" src="https://bookeo.com/widget.js?a=41562H6YTFF15C44DEC3AD"></script>');
   }
 
   ngOnInit(): void {
-    // this.reloadScript();
   }
 
   ngAfterViewInit(): void {}

@@ -1,14 +1,5 @@
 <main id="rooms" class="container-fluid full-page rooms-page">
 
-  <!--<div [@flyInFromTop]="animations[0]" (@flyInFromTop.done)="continueAnimations($event)" class="row rooms-title">-->
-    <!--<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">-->
-      <!--<h1 class="header">Our Rooms</h1>-->
-    <!--</div>-->
-    <!--<div class="col-xs-10 col-md-6 col-xs-offset-1 col-md-offset-3">-->
-      <!--<hr>-->
-    <!--</div>-->
-  <!--</div>-->
-
   <div class="row rooms">
     <div class="col-xs-12 room">
       <img src="../../../assets/images/rooms-pirate-bg.png" class="room-img" />
@@ -25,7 +16,7 @@
           </div>
           <div class="row">
             <div class="col-xs-5 col-md-2 col-xs-offset-1 col-md-offset-4 text-center">
-              <a routerLink="/rooms" class="btn room-button">Learn More</a>
+              <a routerLink="/rooms-pirates" class="btn room-button">Learn More</a>
             </div>
             <div class="col-xs-5 col-md-2 text-center">
               <a routerLink="/booking" class="btn room-button">Book Now!</a>
@@ -33,7 +24,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xs-12 room">
+      <div class="col-xs-6 room">
         <img src="../../../assets/images/rooms-escape-bg.png" class="room-img" />
         <div class="room-overlay">
           <div class="row pad-top-50">
@@ -50,10 +41,31 @@
             <div class="col-xs-6 col-md-4 col-lg-2 col-xs-offset-3 col-md-offset-4 col-lg-offset-5 text-center">
               <a class="btn room-button">Coming Soon!</a>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-6 room">
+        <img src="../../../assets/images/rooms-stem-bg.jpg" class="room-img" />
+        <div class="room-overlay">
+          <div class="row pad-top-50">
+            <div class="col-xs-8 col-xs-offset-2 text-center room-overlay-title">
+              <span>S.T.E.M.</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-10 col-md-6 col-xs-offset-1 col-md-offset-3 room-overlay-text">
+              <p>Travel back in time to 1958 and save Mackinaw City from small tin beings on this travel-sized adventure! Fans of <i>Doctor Who</i> may notice our TARDIS-like room...</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-md-4 col-lg-2 col-xs-offset-3 col-md-offset-4 col-lg-offset-5 text-center">
+              <a routerLink="/rooms-stem"  class="btn room-button">Learn More</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
   <div class="rooms-banner">
     <div class="rooms-title">

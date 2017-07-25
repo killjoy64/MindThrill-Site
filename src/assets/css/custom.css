@@ -34,7 +34,7 @@ footer > div > div > hr {
   position: relative;
 }
 
-#home  { z-index: 1; }
+#home  { z-index: 1; overflow: hidden; }
 #about { z-index: 2; height: auto; }
 #rooms { z-index: 3; }
 
@@ -46,6 +46,15 @@ footer > div > div > hr {
 
 .home {
   margin-top: 20vh;
+}
+
+.home-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .home-title {
@@ -580,7 +589,7 @@ input {
     font-size: 28px;
   }
   .room-overlay-text {
-    line-height: 2.0;
+    line-height: 1.8;
     font-size: 18px;
   }
   .room-button {

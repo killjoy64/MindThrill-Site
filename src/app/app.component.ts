@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import { Meta, Title } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,17 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(private route: ActivatedRoute, private router: Router, private meta: Meta, private title: Title) {}
 
   ngOnInit(): void {
+
+    /*
+     <meta name="description" content="Escape in 60 minutes or less at Mind Thrill escape rooms located in the heart of Mackinaw City. We offer unique and fun experiences for anyone to enjoy.">
+     <meta name="keywords" content="mind thrill,mind thrill escape rooms,escape rooms,mackinaw city,mackinaw escape,fun things to do,challenging, group activity,date night,corporate team building">
+     */
+
+    this.title.setTitle('Home | Mind Thrill Escape Rooms');
+    this.meta.updateTag({name: 'keywords', content: 'mind thrill,mind thrill escape rooms,escape rooms,mackinaw city,mackinaw escape,fun things to do,challenging, group activity,date night,corporate team building, home page, index page, main site'});
 
     // let lastPath: string = window.location.pathname;
     // setInterval((i) => {
@@ -38,21 +47,29 @@ export class AppComponent implements OnInit {
       if (home != null && window.scrollY < home.clientHeight) {
         this.resetActiveMenuItem();
         this.makeActiveMenuItem("home-btn");
+        this.title.setTitle('Home | Mind Thrill Escape Rooms');
+        this.meta.updateTag({name: 'keywords', content: 'mind thrill,mind thrill escape rooms,escape rooms,mackinaw city,mackinaw escape,fun things to do,challenging, group activity,date night,corporate team building, home page, index page, main site'});
       }
 
       if (about != null && window.scrollY >= about.offsetTop && window.scrollY <= about.offsetTop + about.clientHeight) {
         this.resetActiveMenuItem();
         this.makeActiveMenuItem("about-btn");
+        this.title.setTitle('About | Mind Thrill Escape Rooms');
+        this.meta.updateTag({name: 'keywords', content: 'mind thrill,mind thrill escape rooms,escape rooms,mackinaw city,mackinaw escape,fun things to do,challenging, group activity,date night,corporate team building,about,what is it'});
       }
 
       if (rooms != null && window.scrollY >= rooms.offsetTop && window.scrollY <= rooms.offsetTop + rooms.clientHeight) {
         this.resetActiveMenuItem();
         this.makeActiveMenuItem("rooms-btn");
+        this.title.setTitle('Rooms | Mind Thrill Escape Rooms');
+        this.meta.updateTag({name: 'keywords', content: 'mind thrill,mind thrill escape rooms,escape rooms,mackinaw city,mackinaw escape,fun things to do,challenging, group activity,date night,corporate team building,rooms,options'});
       }
 
       if (contact != null && window.scrollY >= contact.offsetTop && window.scrollY <= contact.offsetTop + contact.clientHeight) {
         this.resetActiveMenuItem();
         this.makeActiveMenuItem("contact-btn");
+        this.title.setTitle('Contact Us | Mind Thrill Escape Rooms');
+        this.meta.updateTag({name: 'keywords', content: 'mind thrill,mind thrill escape rooms,escape rooms,mackinaw city,mackinaw escape,fun things to do,challenging, group activity,date night,corporate team building,contact,information'});
       }
 
     });

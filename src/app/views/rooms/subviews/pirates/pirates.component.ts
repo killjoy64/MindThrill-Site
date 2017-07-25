@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'pirates',
@@ -23,8 +24,11 @@ export class RoomsPirateComponent implements OnInit {
   animation_count: number;
   animation_started: boolean;
 
-  constructor() {
+  constructor(private meta: Meta, private title: Title) {
     window.scrollTo(0, 0);
+
+    this.title.setTitle('Pirate\'s Cove | Mind Thrill Escape Rooms');
+    this.meta.updateTag({name: 'keywords', content: 'mind thrill,mind thrill escape rooms,escape rooms,mackinaw city,mackinaw escape,fun things to do,challenging, group activity,date night,corporate team building,pirate\'s cove,all ages,family'});
   }
 
   ngOnInit(): void {
