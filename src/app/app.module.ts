@@ -17,6 +17,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { BookingComponent } from "./views/booking/booking.component";
 import {LeaderboardsComponent} from "./views/leaderboards/leaderboards.component";
 import {RoomsSTEMComponent} from "./views/rooms/subviews/stem/stem.component";
+import {LeaderboardService} from "./providers/leaderboard-provier";
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import {RoomsSTEMComponent} from "./views/rooms/subviews/stem/stem.component";
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [LeaderboardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
