@@ -13,7 +13,7 @@ export class BookingComponent implements OnInit, AfterViewInit {
 
   constructor(private sanitizer: DomSanitizer, private meta: Meta, private title: Title) {
     this.title.setTitle('Booking | Mind Thrill Escape Rooms');
-    this.meta.updateTag({name: 'keywords', content: 'mind thrill,mind thrill escape rooms,escape rooms,mackinaw city,mackinaw escape,fun things to do,challenging, group activity,date night,corporate team building,booking,appointments'});
+    this.meta.updateTag({name: 'keywords', content: 'booking,mind,thrill,reservations,time,slot,bookeo,mackinaw,city,escape,room,game'});
 
     this.safeURL = this.sanitizer.bypassSecurityTrustResourceUrl("https://bookeo.com/widget.js?a=41562H6YTFF15C44DEC3AD");
     this.safeHTML = this.sanitizer.bypassSecurityTrustHtml('<script type="text/javascript" src="https://bookeo.com/widget.js?a=41562H6YTFF15C44DEC3AD"></script>');

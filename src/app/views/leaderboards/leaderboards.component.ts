@@ -31,7 +31,7 @@ export class LeaderboardsComponent {
         });
 
         this.title.setTitle('Leaderboards | Mind Thrill Escape Rooms');
-        this.meta.updateTag({name: 'keywords', content: 'mind thrill,mind thrill escape rooms,escape rooms,mackinaw city,mackinaw escape,fun things to do,challenging,group activity,date night,corporate team building,leaderboards,top times'});
+        this.meta.updateTag({name: 'keywords', content: 'leaderboards,pirates,cove,stem,tardis,top,scores,time,left,mackinaw,city,escape,room,game'});
     }
 
     selectTab(tab: string) {

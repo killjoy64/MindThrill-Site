@@ -28,7 +28,7 @@ export class RoomsPirateComponent implements OnInit {
     window.scrollTo(0, 0);
 
     this.title.setTitle('Pirate\'s Cove | Mind Thrill Escape Rooms');
-    this.meta.updateTag({name: 'keywords', content: 'mind thrill,mind thrill escape rooms,escape rooms,mackinaw city,mackinaw escape,fun things to do,challenging, group activity,date night,corporate team building,pirate\'s cove,all ages,family'});
+    this.meta.updateTag({name: 'keywords', content: 'all,ages,family,large,group,pirates,cove,theme,1,hour,adventure,activity,mackinaw,city,escape,room,game'});
   }
 
   ngOnInit(): void {

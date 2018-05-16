@@ -5,12 +5,14 @@ import { RoomsPirateComponent } from "./views/rooms/subviews/pirates/pirates.com
 import { RoomsSTEMComponent } from "./views/rooms/subviews/stem/stem.component";
 import { BookingComponent } from "./views/booking/booking.component";
 import { LeaderboardsComponent } from "./views/leaderboards/leaderboards.component";
+import {RoomsFortComponent} from "./views/rooms/subviews/fort/fort.component";
 
 const routes: Routes = [
   { path: 'home', component: IndexComponent },
   { path: 'about', component: IndexComponent },
   { path: 'rooms', component: IndexComponent },
   { path: 'rooms-pirates', component: RoomsPirateComponent },
+  { path: 'rooms-fort', component: RoomsFortComponent },
   { path: 'rooms-stem', component: RoomsSTEMComponent },
   { path: 'contact', component: IndexComponent },
   { path: 'faq', component: IndexComponent },

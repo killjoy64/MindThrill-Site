@@ -3,8 +3,8 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-    selector: 'stem',
-    templateUrl: './stem.component.html',
+    selector: 'fort',
+    templateUrl: './fort.component.html',
     animations: [
         trigger('flyInFromTop', [
             state('inactive', style({opacity: 0, transform: 'translateY(25%)'})),
@@ -18,7 +18,7 @@ import { Meta, Title } from '@angular/platform-browser';
         ])
     ]
 })
-export class RoomsSTEMComponent implements OnInit {
+export class RoomsFortComponent implements OnInit {
 
     animations: any[];
     animation_count: number;
@@ -27,8 +27,8 @@ export class RoomsSTEMComponent implements OnInit {
     constructor(private meta: Meta, private title: Title) {
         window.scrollTo(0, 0);
 
-        this.title.setTitle('S.T.E.M. | Mind Thrill Escape Rooms');
-        this.meta.updateTag({name: 'keywords', content: 'all,ages,family,large,group,stem,tardis,doctor,who,theme,1,hour,adventure,activity,mackinaw,city,escape,room,game'});
+        this.title.setTitle('Fort Escape | Mind Thrill Escape Rooms');
+        this.meta.updateTag({name: 'keywords', content: 'all,ages,family,large,group,pirates,cove,theme,1,hour,adventure,activity,mackinaw,city,escape,room,game'});
     }
 
     ngOnInit(): void {

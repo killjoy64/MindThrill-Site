@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
      */
 
     this.title.setTitle('Home | Mind Thrill Escape Rooms');
-    this.meta.updateTag({name: 'keywords', content: 'mind thrill,mind thrill escape rooms,escape rooms,mackinaw city,mackinaw city escape room,mackinaw escape,fun things to do,challenging,group activity,date night,corporate team building, home page, index page, main site'});
+    this.meta.updateTag({name: 'keywords', content: 'escape,room,game,mackinaw,city,mind,thrill,main,site,home,page,fun,challenging,date,night,group,activity,tea,building,corporate'});
 
     // let lastPath: string = window.location.pathname;
     // setInterval((i) => {

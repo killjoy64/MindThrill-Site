@@ -18,6 +18,7 @@ import { BookingComponent } from "./views/booking/booking.component";
 import {LeaderboardsComponent} from "./views/leaderboards/leaderboards.component";
 import {RoomsSTEMComponent} from "./views/rooms/subviews/stem/stem.component";
 import {LeaderboardService} from "./providers/leaderboard-provier";
+import {RoomsFortComponent} from "./views/rooms/subviews/fort/fort.component";
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {LeaderboardService} from "./providers/leaderboard-provier";
     AboutComponent,
     RoomsComponent,
     RoomsPirateComponent,
+    RoomsFortComponent,
     RoomsSTEMComponent,
     FAQComponent,
     ContactComponent,
